@@ -1,5 +1,6 @@
 Opensteer for haxe3 
 
+http://youtu.be/GWcgj7I2_YM
 
 // PaperSteer - Papervision3D Port of OpenSteer
 // Port by Mohammad Haseeb aka M.H.A.Q.S.
@@ -8,7 +9,7 @@ Opensteer for haxe3
 // HaXe Port by Andras Csizmadia <andras@vpmedia.eu> 
 
  HaXe3 Port by Luis Santos AKA DJOKER <djokertheripper@gmail.com> 
- https://djokergames.wordpress.com/ (No Openfl or Limr dependency)
+ https://djokergames.wordpress.com/ (No Openfl or Lime dependency)
 
 
 // OpenSteer -- Steering Behaviors for Autonomous Characters
