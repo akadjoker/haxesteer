@@ -1,16 +1,11 @@
-Opensteer for haxe3 
-
-
+// ----------------------------------------------------------------------------
+//
 // PaperSteer - Papervision3D Port of OpenSteer
 // Port by Mohammad Haseeb aka M.H.A.Q.S.
 // http://www.tabinda.net
 // AS3 Refactor by Andras Csizmadia <andras@vpmedia.eu> (No PV3D dependency)
 // HaXe Port by Andras Csizmadia <andras@vpmedia.eu> 
-
- HaXe3 Port by Luis Santos AKA DJOKER <djokertheripper@gmail.com> 
- https://djokergames.wordpress.com/ (No Openfl or Limr dependency)
-
-
+//
 // OpenSteer -- Steering Behaviors for Autonomous Characters
 //
 // Copyright (c) 2002-2003, Sony Computer Entertainment America
@@ -33,4 +28,18 @@ Opensteer for haxe3
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
+//
+//
 // ----------------------------------------------------------------------------
+package opensteer;
+
+class SeenFromState {
+
+    static public inline var Outside : Int = 0;
+    static public inline var Inside : Int = 1;
+    static public inline var Both : Int = 2;
+
+    public function new() {
+    }
+}
+

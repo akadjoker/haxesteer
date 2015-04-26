@@ -1,16 +1,11 @@
-Opensteer for haxe3 
-
-
+// ----------------------------------------------------------------------------
 // PaperSteer - Papervision3D Port of OpenSteer
 // Port by Mohammad Haseeb aka M.H.A.Q.S.
 // http://www.tabinda.net
 // AS3 Refactor by Andras Csizmadia <andras@vpmedia.eu> (No PV3D dependency)
 // HaXe Port by Andras Csizmadia <andras@vpmedia.eu> 
-
- HaXe3 Port by Luis Santos AKA DJOKER <djokertheripper@gmail.com> 
- https://djokergames.wordpress.com/ (No Openfl or Limr dependency)
-
-
+// HaXe3 Port by Luis Santos AKA DJOKER <djokertheripper@gmail.com>  https://djokergames.wordpress.com/ (No  dependency)
+//
 // OpenSteer -- Steering Behaviors for Autonomous Characters
 //
 // Copyright (c) 2002-2003, Sony Computer Entertainment America
@@ -34,3 +29,20 @@ Opensteer for haxe3
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
 // ----------------------------------------------------------------------------
+package opensteer;
+
+/// <summary>
+/// Obstacle: a pure virtual base class for an abstract shape in space, to be
+/// used with obstacle avoidance.
+///
+/// XXX this should define generic methods for querying the obstacle shape
+/// </summary>
+interface IObstacle {
+    public var SeenFrom(get, set) : Int;
+
+	public function get_SeenFrom() : Int;
+    public function set_SeenFrom(sfs : Int) : Int;
+    // XXX 4-23-03: Temporary work around (see comment above)
+	public   function SteerToAvoid(v : IVehicle, minTimeToCollision : Float) : Vec3;
+}
+
